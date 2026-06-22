@@ -55,6 +55,15 @@ output_dir/
 4. **Post-process**: deduplicate headings, normalize heading hierarchy, replace special bullet symbols with `-`, fix `---` separators, remove slide/page chrome.
 5. **Sync images**: render any additional pages the LLM referenced; remove unreferenced images.
 
+## Cloud Environment Rule
+
+When conversion runs on a cloud environment and the PDF contains images:
+
+1. Upload the extracted images to cloud storage and reference them by URL in the Markdown, **or**
+2. Save images to the filesystem and include them in the final archive delivered to the user.
+
+Do not return Markdown with broken relative image paths unless the image files are also provided.
+
 ## Tips
 
 - Increase `--batch` (e.g., `5`) for faster processing of large PDFs; decrease for higher accuracy.
