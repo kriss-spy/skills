@@ -1,0 +1,22 @@
+{
+  "name": "agent-tex-render-skill",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agent-neutral TeX and LaTeX image renderer",
+  "main": "scripts/render.js",
+  "bin": {
+    "tex-render": "scripts/render.js"
+  },
+  "scripts": {
+    "test": "node scripts/validate.js"
+  },
+  "dependencies": {
+    "mathjax": "^4.1.0",
+    "node-addon-api": "^8.5.0",
+    "node-gyp": "^11.4.2",
+    "sharp": "^0.35.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

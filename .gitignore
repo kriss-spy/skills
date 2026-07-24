@@ -1,0 +1,42 @@
+# Agent runtime data
+**/logs/
+**/temp/
+**/*.tmp
+.agent/
+.skills_cache/
+
+# Environment and secrets
+.env
+*.env
+.env.local
+.env.*.local
+.venv/
+env/
+venv/
+ENV/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Node.js artifacts
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.eslintcache
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.sublime-project
+*.swp
+.DS_Store
+Thumbs.db
+
+# Packaged source archives
+assets/raw_sources/
+*.zip
+*.tar.gz
